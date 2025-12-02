@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+<style>
+/* Basic Reset to make styling easier */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Replace with the actual font from Figma, e.g., 'Inter', sans-serif; */
+    background-color: #f0f2f5; /* Background of the whole page */
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* Main container to center the design as seen in the image */
+.main-container {
+    width: 100%;
+    max-width: 800px; /* Adjust width based on Figma design */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Header Styling */
+.main-header {
+    background-color: #1a237e; /* Use the exact dark blue from Figma */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Hero Section Styling */
+.hero {
+    /* Use a linear-gradient here to match the blue-to-light-blue background */
+    background: linear-gradient(to bottom, #1a237e 0%, #42a5f5 100%);
+    color: white;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.hero-content h1 {
+    /* You'll need to import the specific handwritten font from Figma for this */
+    font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', sans-serif; 
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 300px;
+}
+
+.hero-image-container {
+    flex: 0 0 250px; /* Adjust size based on Figma */
+    height: 250px;
+    position: relative;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Makes the image circular */
+    border: 4px solid white;
+}
+
+/* "My Works" Section Styling */
+.works {
+    padding: 2rem;
+    text-align: center;
+}
+
+.works h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 1rem;
+}
+
+.work-item {
+    display: block;
+    width: 100%;
+    height: 150px; /* Adjust height based on design */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.work-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the box without stretching */
+    transition: transform 0.3s ease;
+}
+
+.work-item:hover img {
+    transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
+/* Footer / Available Hours Section Styling */
+.available-hours {
+    background-color: #e3f2fd; /* Use the exact light blue from Figma */
+    padding: 2rem;
+    color: #333;
+}
+
+.available-hours h3 {
+    margin-bottom: 0.5rem;
+}
+
+.available-hours p {
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+  </style>
+    <div class="main-container">
+        <header class="main-header">
+            <div class="logo">VICTORIA</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm Victoria!</h1>
+                <p>A 2nd year GBDA student from the University of Waterloo.</p>
+            </div>
+            <div class="hero-image-container">
+                <img src="hero-image.jpg" alt="Victoria" class="profile-img">
+            </div>
+        </section>
+
+        <section class="works">
+            <h2>My Works</h2>
+            <div class="works-grid">
+                <a href="#" class="work-item">
+                    <img src="Screenshot 2025-11-19 at 3.23.06 AM.png" alt="Project 1">
+                </a>
+                <a href="#" class="work-item">
+                    <img src="work-2.jpg" alt="Project 2">
+                </a>
+                <a href="#" class="work-item">
+                    <img src="work-3.jpg" alt="Project 3">
+                </a>
+            </div>
+        </section>
+
+        <footer class="available-hours">
+            <h3>Available Hours</h3>
+            <p>Mon - Fri: 9AM EST - 11PM EST</p>
+            <p>Sat-Sun: 11AM EST - 3AM EST</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+
+    
